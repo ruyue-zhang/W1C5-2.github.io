@@ -35,8 +35,8 @@
 }
 .main-page .part-3{
   width: 1085px;
-  height: 232px;
-  margin: 128px auto 0 auto;
+  height: 240px;
+  margin: 120px auto 0 auto;
   display: flex;
   flex-direction: row;
 }
@@ -55,26 +55,18 @@
   border: 0;
   width: 100%;
   height: 100%;
-  display: none;
+  display: none; 
   background: rgb(58,1,132,0.44);
   font-family: 'Merriweather';
-}
-.part-3 a {
-  padding: 5px 5px 2px 5px;
-  display: inline-block;
-  margin-top: 20px;
-  width: 100px;
-  height: 30px;
-  background-color: black;
-}
 
+}
 .part-3 div:nth-child(1) {
   background-image: url(../image/empire-state.png);
   background-size: cover;
 }
 .part-3 div:nth-child(2) {
-  background-image: url(../image/midtown.png);
-  background-size: cover;
+  background-image: url(../image/midtown.png); 
+  background-size: cover; 
 }
 .part-3 div:nth-child(3) {
   background-image: url(../image/liberty.png);
@@ -87,7 +79,7 @@
 }
 .part-3 div:nth-child(2):hover .mask {
   display: block;
-  background: rgba(5, 5, 5, 0.40);
+  background: rgba(2, 2, 2, 0.4);
 }
 .part-3 div:nth-child(3):hover .mask {
   color :black;
@@ -96,14 +88,8 @@
   background: rgb(255,231,179);
 }
 .part-3 div:nth-child(3):hover a {
-  padding: 5px 5px 2px 5px;
-  display: inline-block;
   color: white;
-  margin-top: 20px;
-  width: 100px;
-  height: 30px;
-  background-color: black;
-}
+} 
 .part-3 h2 {
   padding-top: 30px;
   font-size: 20px;
@@ -113,6 +99,14 @@
   font-style: italic;
   font-size: 13px;
   margin: 10px 5px 20px 5px;
+}
+.part-3 a {
+  padding: 5px 5px 2px 5px;
+  display: inline-block;
+  margin-top: 20px;
+  width: 100px;
+  height: 30px;
+  background-color: black;
 }
 
 .main-page .part-4 {
