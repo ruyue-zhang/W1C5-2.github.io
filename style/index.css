@@ -41,11 +41,13 @@
   flex-direction: row;
 }
 .main-page .part-3 div {
+  position: relative;
   border: 8px solid white;
   width: 339px;
   height: 232px;
   display: inline-block;
   margin: 0 10px 0 10px;
+  overflow: hidden;
 }
 
 .part-3 div .mask {
@@ -58,7 +60,21 @@
   display: none; 
   background: rgb(58,1,132,0.44);
   font-family: 'Merriweather';
+}
+.part-3 div .mask-text {
+  position: absolute;
+  z-index: 2;
+  left: 0;
+  top: 0;
+}
+.part-3 div .mask-cover {
+  position: absolute;
+  z-index: 1;
 
+  right: 120px;
+  bottom: 120px;
+
+  transform: rotate(45deg);
 }
 .part-3 div:nth-child(1) {
   background-image: url(../image/empire-state.png);
@@ -77,7 +93,8 @@
   display: block;
   background: rgb(58,1,132,0.44);
 }
-.part-3 div:nth-child(2):hover .mask {
+.part-3 div:nth-child(2):hover .mask-text,
+.part-3 div:nth-child(2):hover .mask-cover {
   display: block;
   background: rgba(2, 2, 2, 0.4);
 }
